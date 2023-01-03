@@ -4,5 +4,5 @@ from . import views
 
 app_name = 'learning_logs'
 urlpatterns = [
-    path('',views.index,name = 'indexc'),
+    path('',views.index,name = 'index'),
 ]
