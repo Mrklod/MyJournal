@@ -16,4 +16,6 @@ class Entry(models.Model):
         verbose_name = 'entries'
 
     def __str__(self):
-        return f'{self.text[:50]}...'
+        if len(self.text)>50:
+            return f'{self.text[:50]}...'
+        return self.text
